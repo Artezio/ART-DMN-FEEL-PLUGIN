@@ -16,6 +16,13 @@
 		<java.version>8</java.version>
 	</properties>
 
+	<distributionManagement>
+		<repository>
+			<id>mvnRepository</id>
+			<url>file://${project.basedir}/mvn-repo</url>
+		</repository>
+	</distributionManagement>
+
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

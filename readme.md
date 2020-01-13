@@ -3,18 +3,28 @@
 ART-DMN-FEEL-PLUGIN is an extension for [Camunda FEEL plugin] that makes it easier to use the command `list contains()` from
 [Camunda FEEL plugin] adding symbol `~` as an alias for the command.
 
+## Usage
+
+While creating a dmn table select `list` as an input type and add values to the table preceded by the symbol `~`.<br/>
+Example:<br/>
+![](doc/plugin-usage-example.png)
+
 ## Installation
 
 To enable this extension in your project you have to register both [Camunda FEEL plugin] and ART-DMN-FEEL-PLUGIN. The following steps
-describe these actions in detail:
+describe installation phase in detail:
 
-1. Install this plugin into your local mvn repo 
+1. Add the repository to your project `pom`:
+    ```xml
+    <repositories>
+       ...
+       <repository>    
+           <id>dmn-feel-plugin-repo</id>
+           <url>https://raw.githubusercontent.com/Artezio/ART-DMN-FEEL-PLUGIN/master/mvn-repo/</url>
+       </repository> 
+    </repositories>
     ```
-    git clone https://github.com/Artezio/ART-DMN-FEEL-PLUGIN.git
-    cd ART-DMN-FEEL-PLUGIN
-    mvn install
-    ```
-2. Add the plugin to your project as a mvn dependency
+2. Add the plugin to your project `pom`:
     ```xml
     <dependency>
         <groupId>com.artezio.bpm.camunda</groupId>
@@ -58,12 +68,6 @@ describe these actions in detail:
     <bean id="camundaFeelEnginePlugin" class="org.camunda.feel.CamundaFeelEnginePlugin"/>
     <bean id="feelExtensionPlugin" class="com.artezio.camunda.plugin.FeelExtensionPlugin"/>
     ```
-
-## Usage
-
-While creating a dmn table select `list` as an input type and add values to the table preceded by the symbol `~`.<br/>
-Example:<br/>
-![](doc/plugin-usage-example.png)
 
 [Camunda FEEL plugin]: https://github.com/camunda/feel-scala/tree/master/feel-engine-plugin
 [Camunda Modeler]: https://camunda.com/download/modeler/
