@@ -19,7 +19,7 @@ describe installation phase in detail:
     <repositories>
        ...
        <repository>    
-           <id>dmn-feel-plugin-repo</id>
+           <id>art-dmn-feel-plugin-repo</id>
            <url>https://raw.githubusercontent.com/Artezio/ART-DMN-FEEL-PLUGIN/master/mvn-repo/</url>
        </repository> 
     </repositories>
