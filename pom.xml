@@ -18,8 +18,8 @@
 
 	<distributionManagement>
 		<repository>
-			<id>art-dmn-feel-plugin-repo</id>
-			<url>file://${project.basedir}/mvn-repo</url>
+			<id>art-mvn-repo</id>
+			<url>https://maven.pkg.github.com/Artezio/ART-MVN-REPO</url>
 		</repository>
 	</distributionManagement>
 
