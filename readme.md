@@ -16,20 +16,17 @@ describe installation phase in detail:
 
 1. Add the repository to your project `pom`:
     ```xml
-    <repositories>
-       ...
-       <repository>    
-           <id>art-dmn-feel-plugin-repo</id>
-           <url>https://raw.githubusercontent.com/Artezio/ART-DMN-FEEL-PLUGIN/master/mvn-repo/</url>
-       </repository> 
-    </repositories>
+    <repository>    
+      <id>artezio</id>
+      <url>https://nexus.artezio.net/repository/maven-releases</url>
+    </repository> 
     ```
 2. Add the plugin to your project `pom`:
     ```xml
     <dependency>
         <groupId>com.artezio.bpm.camunda</groupId>
         <artifactId>camunda-dmn-feel-extension-plugin</artifactId>
-        <version>1.0</version>
+        <version>${dmn-feel-plugin.version}</version>
     </dependency>
     ```
 3. Register plugins:
