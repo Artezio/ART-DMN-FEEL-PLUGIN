@@ -16,13 +16,6 @@
 		<java.version>8</java.version>
 	</properties>
 
-	<distributionManagement>
-		<repository>
-			<id>art-mvn-repo</id>
-			<url>https://maven.pkg.github.com/Artezio/ART-MVN-REPO</url>
-		</repository>
-	</distributionManagement>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
